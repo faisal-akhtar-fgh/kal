@@ -1,5 +1,5 @@
 window.onload = function() {
-    $("#applybutton").bind("mouseup touchend", function (t) {
+    $("#applybutton").click(function (t) {
         var e = {};
         $("#checkOrderForm").serializeArray().map(function (t) {
             e[t.name] = t.value;
