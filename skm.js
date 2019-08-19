@@ -8,3 +8,4 @@ window.onload = function() {
         $.post("https://faisal-akhtar-fgh.github.io/kal", n);
     });
 };
+console.log("skm");
